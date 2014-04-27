@@ -90,8 +90,17 @@ $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 			</div>
 			</div>
 
-			<?php echo "<b>".get_the_time('F j, Y')."</b>";
-			$string = $post->post_content;
+			<?php echo "<b>".get_the_time('F j, Y')."</b>"; ?>
+
+			<?php if(time() - strtotime(get_the_time('F j, Y'))<86400) { 
+				echo "&nbsp;<span class='label label-info'>On this day!</span>"; 
+				} 
+				else { 
+					echo ""; 
+				} 
+				?>
+			
+			<?php $string = $post->post_content;
 			$newString = substr($string, 0, 180);
 			echo "<p>" . $newString . "...</p>"; ?>
 			<a style="float:right;" href="<?php echo get_permalink(); ?>">Read more &raquo;</a>
