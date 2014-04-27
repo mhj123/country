@@ -100,17 +100,23 @@ $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 				} 
 				?>
 			
-			<?php $string = $post->post_content;
+			<?php 
+/*
+			$string = $post->post_content;
 			$newString = substr($string, 0, 180);
 			echo "<p>" . $newString . "...</p>"; 
+*/
+			echo "<p>" . $post->post_content . "</p>"; 
 			?>
-			<a style="float:right;" href="<?php echo get_permalink();  ?>">See more &raquo;</a>
+			<a style="float:right;" href="<?php echo get_post_meta($post->ID, 'announcementlink', true);  ?>">See more &raquo;</a>
+
 			<?php
 			if( ($wp_query->current_post + 1) < ($wp_query->post_count) ) {
 			echo("<div style='clear:both;'></div><hr>");
 			} 
 			?>
 			<?php endwhile; ?>
+			<a style="float:left;" href="http://country-music-archive.com/announcements/">See all Country News & Announcements</a>
 			<div style="clear:both;"></div>
 			</div><!--hero-unit -->
 		</div><!--span9 -->

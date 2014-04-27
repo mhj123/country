@@ -632,7 +632,11 @@ function announcement_register() {
         'show_ui' => true, 
         'capability_type' => 'post', 
         'hierarchical' => false, 
-        'rewrite' => true, 
+ 		'rewrite' => array(
+			'slug' => 'announcement',
+			'with_front' => false
+			),
+        'has_archive' => 'announcements',
         'supports' => array('title', 'editor', 'thumbnail', 'custom-fields') 
        ); 
  

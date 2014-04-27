@@ -23,7 +23,7 @@ get_header(); ?>
 -->    
 <div class="span9">
 <div class="sub-hero-unit">
-
+<h1>Country News & Announcements</h1>
 <?php
 	/* Queue the first post, that way we know
 	 * what date we're dealing with (if that is the case).
