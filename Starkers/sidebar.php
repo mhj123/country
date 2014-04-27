@@ -67,13 +67,12 @@ echo $introduction;
 }
 }
 ?>
-
-
-
-
 <div style="clear:both;"></div>
-
-<hr>
+<?php
+if( ($my_query->current_post + 1) < ($my_query->post_count) ) {
+echo("<div style='clear:both;'></div><hr>");
+} 
+?>
 <?php endwhile; ?>
 <?php wp_reset_query(); ?>
 </div><!-- well-->
