@@ -16,7 +16,7 @@ Tags: starkers, naked, clean, basic
 @import "css/typography.css";
 @import "css/layout.css";
 
-
+\
 h1, h2, h3, h4, p, div {
 margin:10px;
 }
@@ -46,9 +46,21 @@ border:5px #900 solid;
 .sidebar {
 width:200px;
 float:left;
-border:5px #900 solid;
-
+border:5px #111 solid;
 }
+
+.well ul, .well ul li, ul.leftnav, ul.leftnav li, ul.leftnav li ul, ul.leftnav a, ul.leftnav li a, ul.leftnav li ul a, .leftnav ul li, .leftnav ul, .leftnav, ul, ul li, ul li a, li, li a  {
+list-style-type: none;
+list-style: none;
+}
+
+ul li  {
+list-style-type: none;
+font-size: 16px;
+font-color: #12516D;
+}
+
+
 #covers {
 width:930px;
 float:left;
@@ -62,11 +74,159 @@ body {
 li.widget-container {
 list-style-type: none;
 }
-
-h1, h2, h3, h4, p, a, li.a, label.screen-reader-text, * {
-font-family: 'Donegal One', serif;
+.wp-post-image  {
+float:left;
+margin: 0 10px 10px 0;
 }
 
 
+#sidebar .menu-header-menu-container {
+list-style-type: none;
+} // container class
+#sidebar .menu-header-menu-container ul {
+list-style-type: none;
+} // container class first unordered list
+#sidebar .menu-header-menu-container ul ul {
+list-style-type: none;
+} //unordered list within an unordered list
+#sidebar .menu-header-menu-container li {
+list-style-type: none;
+} // each navigation item
+#sidebar .menu-header-menu-container li a {
+list-style-type: none;
+} // each navigation item anchor
+#sidebar .menu-header-menu-container li ul {
+list-style-type: 
+} // unordered list if there is drop down items
+#sidebar .menu-header-menu-container li li {
+list-style-type: none;
+} // each drop down navigation item
+#sidebar .menu-header-menu-container li li a {
+list-style-type: none;
+} // each drap down navigation item anchor
 
+li.menu-item {
+list-style-type: none;
+}
+.current_page_item a:active {
+font-color:black;
+}
 
+ul.xoxo {
+margin:0;
+}
+h3.widget-title {
+font-size:130%;
+}
+* {
+font-family: Calibri, helvetica, arial, sans-serif, sans; 
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  
+  border: 1px solid #ededed;
+  background-color: #ededed;
+*/
+
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+li.menu-item {
+color: #12516D;
+}
+
+li.menu-item a {
+color: #12516D;
+}
+
+ul.menu {
+}
+/*
+div#sidebar {
+    background-color: transparent;
+    background-image: url('http://www.mj-pm.co.uk/country/wp-content/uploads/2013/04/CountryMusicArchiveLogo2.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+*/
+/*
+    background-attachment: scroll;
+    background-size: 100%;
+*/
+}
+/*
+div.buymusic {
+    background-image: url('http://www.mj-pm.co.uk/country/wp-content/uploads/2013/05/1-Buy-Music-Hillbilly-Shotgun.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size:25%;
+}
+div.archivebuddy {
+
+    background-image: url('http://www.mj-pm.co.uk/country/wp-content/uploads/2013/05/2-Become-Archive-Buddy.png');
+background-size:18%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+div.countrychattoo {
+   
+    background-image: url('http://www.mj-pm.co.uk/country/wp-content/uploads/2013/05/3-Read-our-chat.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size:35%;
+}
+*/
+
+.alt-hero-unit *, h1.alt-hero-unit {
+color: white;
+font-weight:bold;
+font-size:125%;
+}
+hr.branch {
+/*
+background:url(http://www.mj-pm.co.uk/country/wp-content/uploads/2013/05/branch2.png) no-repeat top center;
+	height:42px;
+	border:none !important;
+*/
+margin-bottom:0;
+}
+
+div.countrychat{
+border-top: solid 6px rgb(242,224,202);
+
+}
+div.aboutarchive{
+border-top: solid 6px rgb(249,218,91);
+  
+
+/*http://www.colourlovers.com/palette/879085/Garbo_Gaucho8*/
+}
+div.sub-hero-unit img {
+margin:0 10px 10px 0;
+}
+div.sub-hero-unit h4,div.sub-hero-unit h1 {
+margin:0 0 10px 0;
+}
+
+li.menu-item a {
+font-weight:bold;
+}
+
+div.page-header {
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2013/11/Optimized-Header-10-Darkened-Sepia-JPEG-1__1383491709_86.2.41.902.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size: 100%;
+background-size: cover;
+padding: 15% 0%;
+margin-top:0;
+}
+div.introbox {
+	/* height: 240px; */
+}
