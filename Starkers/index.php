@@ -102,8 +102,10 @@ $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 			
 			<?php $string = $post->post_content;
 			$newString = substr($string, 0, 180);
-			echo "<p>" . $newString . "...</p>"; ?>
-			<a style="float:right;" href="<?php echo get_permalink(); ?>">Read more &raquo;</a>
+			echo "<p>" . $newString . "...</p>"; 
+			?>
+
+			<a style="float:right;" href="<?php echo get_post_meta($post->ID, 'announcementlink', true);  ?>">See more &raquo;</a>
 			<?php endwhile; ?>
 			<div style="clear:both;"></div>
 			</div><!--hero-unit -->
