@@ -59,8 +59,11 @@ border-top: solid 6px rgb(249,218,91);
 
 /*http://www.colourlovers.com/palette/879085/Garbo_Gaucho8*/
 }
+div.sub-hero-unit h2 {
+	margin-bottom:20px;
+}
 div.sub-hero-unit img {
-margin:0 10px 10px 0;
+margin:0 10px 0 0;
 }
 div.sub-hero-unit h4,div.sub-hero-unit h1 {
 margin:0 0 10px 0;

@@ -31,7 +31,9 @@ if($content = $post->post_content ) {
 the_content();
 }
 ?>
+
 <a class="btn btn-success" href="<?php echo get_post_meta($post->ID, 'announcementlink', true);  ?>">Find music by this artist</a>
+
 </div><!--sub-hero-unit -->
 
 </div><!-- row-fluid -->

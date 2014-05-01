@@ -65,21 +65,22 @@ $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 	<div class="row">
 		<div class="span9" style="overflow:auto;">
 			<div class="sub-hero-unit">
-			<h2>Country News & Announcements</h2>
+			<h2>Country Anniversaries and News</h2>
 			<?php
 			$wp_query= null;
 			$wp_query = new WP_Query();
 			$wp_query->query( array( 'post_type' => 'announcement', showposts => 3 ) );
 			while (have_posts()) : the_post(); ?>
-			<div style="float:left;width:120px;">
+			<div style="float:left;width:110px;">
 			<div style="float:left;">
 			<?php $imagepath="";
 			$imagepath = strip_tags( get_the_term_list($post->ID, 'imagepath', '', ', ', '')); 
 			 ?>
 			<?php if($imagepath!=''){ ?>
-			<div style="width:100px;height:100px;padding:0;margin:0;">
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<img width="95" height="95" style='float:left;border: 1px solid #bbb;' src="<?php echo $imagepath; ?>"/></a>
+			<div style="width:90px;height:90px;padding:0;margin:0;">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<img width="80" height="80" style='float:left;border: 1px solid #bbb;' src="<?php echo $imagepath; ?>"/>
+				</a>
 			</div>
 			<br>
 			<?php } 
@@ -101,14 +102,15 @@ $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 				?>
 			
 			<?php 
-/*
+
 			$string = $post->post_content;
-			$newString = substr($string, 0, 180);
+			$newString = substr($string, 0, 150);
 			echo "<p>" . $newString . "...</p>"; 
-*/
+/*
 			echo "<p>" . $post->post_content . "</p>"; 
+*/
 			?>
-			<a style="float:right;" href="<?php echo get_post_meta($post->ID, 'announcementlink', true);  ?>">See more &raquo;</a>
+			<a style="float:right;" href="<?php echo the_permalink(); ?>">See more &raquo;</a>
 
 			<?php
 			if( ($wp_query->current_post + 1) < ($wp_query->post_count) ) {
@@ -116,6 +118,7 @@ $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 			} 
 			?>
 			<?php endwhile; ?>
+			<br><br>
 			<a style="float:left;" href="http://country-music-archive.com/announcements/">See all Country News & Announcements</a>
 			<div style="clear:both;"></div>
 			</div><!--hero-unit -->
