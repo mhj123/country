@@ -1,0 +1,111 @@
+/*
+Theme Name: Starkers
+Theme URI: http://elliotjaystocks.com
+Description: The totally nude Wordpress theme. Phwoar! (Based on Twenty Ten)
+Version: 3.0
+Author: Elliot Jay Stocks
+Author URI: http://elliotjaystocks.com
+Tags: starkers, naked, clean, basic
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+
+
+
+li.menu-item {
+color: #12516D;
+}
+
+li.menu-item a {
+color: #12516D;
+}
+
+div.buymusic {
+background-image: url('http://country-music-archive.com/wp-content/uploads/2014/04/1-Buy-Music-Hillbilly-Shotgun.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size:25%;
+}
+
+div.archivebuddy {
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2014/04/2-Become-Archive-Buddy.png');
+background-size:18%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+div.countrychattoo {
+   
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2014/04/3-Read-our-chat.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size:35%;
+}
+
+
+.alt-hero-unit *, h1.alt-hero-unit {
+color: white;
+font-weight:bold;
+font-size:125%;
+}
+
+div.countrychat{
+border-top: solid 6px rgb(242,224,202);
+
+}
+div.aboutarchive{
+border-top: solid 6px rgb(249,218,91);
+  
+
+/*http://www.colourlovers.com/palette/879085/Garbo_Gaucho8*/
+}
+div.sub-hero-unit h2 {
+	margin-bottom:20px;
+}
+div.sub-hero-unit img {
+margin:0 10px 0 0;
+}
+div.sub-hero-unit h4,div.sub-hero-unit h1 {
+margin:0 0 10px 0;
+}
+
+li.menu-item a {
+font-weight:bold;
+}
+
+div.page-header {
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2013/11/Optimized-Header-10-Darkened-Sepia-JPEG-1__1383491709_86.2.41.902.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size: 100%;
+background-size: cover;
+padding: 15% 0%;
+margin-top:0;
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid #ededed;
+  background-color: #ededed;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+li.widget_text {
+list-style-type:none;
+}
+div.introbox {
+  min-height: 260px;
+}
+div.hero-unit ul.xoxo {
+margin-left: 0;
+}
+div.well.sidebar img.wp-post-image {
+float: left; 
+margin-right: 10px;
+}
