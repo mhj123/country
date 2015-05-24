@@ -1,0 +1,72 @@
+/*
+Theme Name: Starkers
+Theme URI: http://elliotjaystocks.com
+Description: The totally nude Wordpress theme. Phwoar! (Based on Twenty Ten)
+Version: 3.0
+Author: Elliot Jay Stocks
+Author URI: http://elliotjaystocks.com
+Tags: starkers, naked, clean, basic
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+
+/*
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+
+h1, h2, h3, h4, p, div {
+margin:10px;
+}
+a {
+text-decoration:none;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 26px;
+}
+h3 {
+font-size: 20px;
+}
+#intro {
+width:700px;
+float:left;
+border:5px #900 solid;
+background-color: #FFFFE0;
+}
+#content {
+width:700px;
+float:left;
+border:5px #900 solid;
+}
+.sidebar {
+width:200px;
+float:left;
+border:5px #900 solid;
+
+}
+#covers {
+width:930px;
+float:left;
+border:5px #900 solid;
+}
+body {
+
+}
+*/
+
+li.widget-container {
+list-style-type: none;
+}
+
+h1, h2, h3, h4, p, a, li.a, label.screen-reader-text, * {
+font-family: 'Donegal One', serif;
+}
+
+
+
+

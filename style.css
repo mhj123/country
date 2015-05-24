@@ -1,0 +1,208 @@
+/*
+Theme Name: Country repainted - Jan 2015
+
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+
+
+
+li.menu-item {
+color: #12516D;
+}
+
+li.menu-item a {
+color: #12516D;
+}
+
+div.buymusic {
+background-image: url('http://country-music-archive.com/wp-content/uploads/2014/04/1-Buy-Music-Hillbilly-Shotgun.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size:25%;
+}
+
+div.archivebuddy {
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2014/04/2-Become-Archive-Buddy.png');
+background-size:18%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+div.countrychattoo {
+   
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2014/04/3-Read-our-chat.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size:35%;
+}
+
+
+.alt-hero-unit *, h1.alt-hero-unit {
+color: white;
+font-weight:bold;
+font-size:125%;
+}
+
+div.countrychat{
+border-top: solid 6px rgb(242,224,202);
+
+}
+div.aboutarchive{
+border-top: solid 6px rgb(249,218,91);
+  
+
+/*http://www.colourlovers.com/palette/879085/Garbo_Gaucho8*/
+}
+div.sub-hero-unit h2 {
+	margin-bottom:20px;
+}
+div.sub-hero-unit img {
+margin:0 10px 0 0;
+}
+div.sub-hero-unit h4,div.sub-hero-unit h1 {
+margin:0 0 10px 0;
+}
+
+li.menu-item a {
+font-weight:bold;
+}
+
+div.page-header {
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2013/11/Optimized-Header-10-Darkened-Sepia-JPEG-1__1383491709_86.2.41.902.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size: 100%;
+background-size: cover;
+padding: 15% 0%;
+margin-top:0;
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+li.widget_text {
+list-style-type:none;
+}
+div.introbox {
+  min-height: 260px;
+}
+div.hero-unit ul.xoxo {
+margin-left: 0;
+}
+div.well.sidebar img.attachment-50x50.wp-post-image {
+float: left; 
+margin-right: 10px;
+}
+img.wp-post-image {
+border: 2px solid #111;
+}
+li.cat-item {
+list-style-type: none;
+}
+div.textwidget p, div.introbox p, div.sub-hero-unit p {
+line-height: 20px;
+}
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+* .modal-dialog {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+    }
+div.main-header {
+  background-color: #B15C1D;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main-header h1 {
+font-size: 50px;
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.main-header h1, .main-header h4 {
+text-align: center; 
+}
+ul#menu-header-menu {
+  margin-left: 0;
+}
+ul#menu-header-menu li {
+  float:left;
+  margin-right: 40px;
+  list-style-type: none;
+  font-size: 20px;
+}
+.main-header h4, .main-header a:link, .main-header a:active, .main-header a:visited {
+    color: white;
+
+  text-decoration: none;
+}
+.main-header h1 {
+  font-weight: normal;
+  color: white;
+  font-family: 'Bree Serif', serif;
+}
+.main-header a:hover {
+  text-decoration: underline;
+}
+input {
+  border: none;
+}
+
+div.fb-like-box {
+margin: auto;
+}
+div.archive-image {
+    background-image: url('http://country-music-archive.com/wp-content/uploads/2015/01/bacm-header.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+background-size: 100%;
+background-size: cover;
+padding: 15% 0%;
+margin-top:0;
+}
+div.intro-message {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: 4px solid #aaa;
+  line-height: 18px;
+  min-height: 258px;
+}
+div.intro-text {
+margin: 10px;
+}
+form.form-search {
+  margin-bottom: 0;
+}
+
+div.menu-header-menu-container {
+  margin-top:-5px;
+}
+.icon.icon-music {
+    font-size: 75px;
+}
+div.flb {
+background-color: #B15C1D;
+background-image: url(http://www.transparenttextures.com/patterns/axiom-pattern.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}

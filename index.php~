@@ -1,0 +1,126 @@
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query. 
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Starkers
+ * @since Starkers 3.0
+ */
+
+get_header(); ?>
+
+
+<div class="container">
+      <div class="row">
+      
+<div class="span3">
+<div class="well sidebar-nav">
+<?php get_sidebar(); ?>
+<h3>Popular artists available on CD</h3><?php wp_tag_cloud( array ( 'taxonomy' => artist ) ); ?>
+
+<h3>Popular subgenres</h3><?php wp_tag_cloud( array ( 'taxonomy' => category ) ); ?>
+
+</div><!-- well-->
+</div><!-- span3 -->      
+
+      
+         <div class="span9">
+          <div class="hero-unit">
+
+<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+</div>
+<!--
+ <div class="row-fluid">
+            <div class="span12 sub-hero-unit">
+<a href="http://127.0.0.1:8080/country/?p=5"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/campbell2.jpg" /></a>
+<a href="http://127.0.0.1:8080/country/?p=6"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/002.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=7"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/marvin.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=8"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/hillbillies.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=9"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/rusty-gill.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=10"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/whitley.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=11"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/luther.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=12"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/winters.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=13"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/gotgw.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=14"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/shelton.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=15"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/hoosier.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=16"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/ranch-boys.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=17"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/rex-allen.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=18"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/buddy-jones.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=19"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/autry1.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=20"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/autry2.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=21"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/dalhart.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=22"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/rogers.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=23"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/ritter.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=24"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/uncle-henry.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=25"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/robison.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=26"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/beverly.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=27"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/crockett.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=28"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/fieldshall.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=29"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/wakely.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=30"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/denver.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=31"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/kazee.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=32"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/arkie.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=33"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/eddie-kirk.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=34"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/panachord.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=35"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/thompson.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=36"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/carlisle.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=37"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/wills.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=38"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/bill-carlisle.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=39"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/shug.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=40"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/parker.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=41"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/autry3.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=42"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/autry4.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=43"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/autry5.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=44"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/riley.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=45"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/renfro.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=46"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/coonhunters.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=47"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/HomerJethro.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=48"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/delmores.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=49"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/ferlinhusky.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=50"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/texwilliams.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=51"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/roy-dale.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=52"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/p-ramblers.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=53"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/bill-boyd.jpg" />
+<a href="http://127.0.0.1:8080/country/?p=54"><img style="float:left;width:155px;" src="http://www.bacm-cds.co.uk/images/okeh.jpg" />
+</div>-->
+</div><!-- row fluid-->
+</div><!-- span9 -->
+
+
+ <div class="row-fluid">
+            <div class="span12 sub-hero-unit">
+
+<h2>Our most recent releases</h2>
+			<?php
+			/* Run the loop to output the posts.
+			 * If you want to overload this in a child theme then include a file
+			 * called loop-index.php and that will be used instead.
+			 */
+			 get_template_part( 'loop', 'index' );
+			?>
+
+</div><!-- row fluid-->
+</div><!-- span9 -->
+
+</div><!-- hero unit-->
+</div><!-- span9 -->
+
+
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
